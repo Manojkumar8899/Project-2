@@ -10,7 +10,7 @@ setup(
         "README.md"
   ).read(),  # Long description read of the the readme file
     long_description_content_type="text/markdown",
-    url="",  
+    url="https://github.com/Manojkumar8899/Project-2",  
     packages=find_packages(),
     install_requires=[
         "requests>=2.25.1",
