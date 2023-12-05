@@ -7,11 +7,19 @@ class TheatreScraper:
     """
     A class to scrape theatre information from 'https://www.cinemaprofile.com'.
 
-    Attributes:
+    Args:
         base_url (str): Base URL of the website to scrape.
+
+    Attributes:
+        base_url (str): Base URL of the website.
     """
 
     def __init__(self, base_url):
+         """Initialize the TheatreScraper.
+
+        Args:
+            base_url (str): Base URL of the website to scrape.
+        """
         self.base_url = base_url
 
     def get_soup_from_url(self, url):
