@@ -17,7 +17,11 @@ class OpenAQDataFetcher:
 
         Args:
             url (str): The API endpoint URL.
+                Should include parameters such as date range, location, or any other necessary filters.
+                Example: "https://api.openaq.org/v2/measurements?date_from=..."
             headers (dict): HTTP headers for the API request.
+                Should include required headers such as API key, content type, etc.
+                Example: {"X-API-Key": "...", 'accept': 'application/json', 'content-type': 'application/json'}
         """
         self.url = url
         self.headers = headers
